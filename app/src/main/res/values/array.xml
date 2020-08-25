@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="pieces">
+        <item>Rook</item>
+        <item>Knight</item>
+        <item>Bishop</item>
+        <item>Queen</item>
+        <item>None</item>
+    </string-array>
+</resources>

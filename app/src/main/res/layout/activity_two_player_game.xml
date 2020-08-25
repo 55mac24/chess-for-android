@@ -1,0 +1,816 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/woodbgone"
+    tools:context=".TwoPlayerGame">
+
+    <TableLayout
+        android:id="@+id/main_chessboard"
+        android:layout_width="325dp"
+        android:layout_height="325dp"
+        android:layout_marginTop="32dp"
+        android:stretchColumns="0,1,2,3,4,5,6,7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableRow
+            android:id="@+id/row_8"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/a8"
+                android:layout_width="37.5dp"
+                android:layout_height="37.5dp"
+                android:clickable="true"
+                app:srcCompat="?attr/selectableItemBackgroundBorderless" />
+
+            <ImageView
+                android:id="@+id/b8"
+                android:layout_width="37.5dp"
+                android:layout_height="37.5dp"
+                android:clickable="true"
+                android:onClick="setMove" />
+
+            <ImageView
+                android:id="@+id/c8"
+                android:layout_width="37.5dp"
+                android:layout_height="37.5dp"
+                android:clickable="true"
+                android:onClick="setMove" />
+
+            <ImageView
+                android:id="@+id/d8"
+                android:layout_width="37.5dp"
+                android:layout_height="37.5dp"
+                android:clickable="true"
+                android:onClick="setMove" />
+
+            <ImageView
+                android:id="@+id/e8"
+                android:layout_width="37.5dp"
+                android:layout_height="37.5dp"
+                android:clickable="true"
+                android:onClick="setMove" />
+
+            <ImageView
+                android:id="@+id/f8"
+                android:layout_width="37.5dp"
+                android:layout_height="37.5dp"
+                android:clickable="true"
+                android:onClick="setMove" />
+
+            <ImageView
+                android:id="@+id/g8"
+                android:layout_width="37.5dp"
+                android:layout_height="37.5dp"
+                android:clickable="true"
+                android:onClick="setMove" />
+
+            <ImageView
+                android:id="@+id/h8"
+                android:layout_width="37.5dp"
+                android:layout_height="37.5dp"
+                android:clickable="true"
+                android:onClick="setMove" />
+
+            <TextView
+                android:id="@+id/row-8-label"
+                android:layout_width="25dp"
+                android:layout_height="37.5dp"
+                android:shadowColor="#000000"
+                android:text="@string/chessrow8"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/row_7"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/a7"
+                android:layout_width="37.5dp"
+                android:layout_height="37.5dp"
+                android:clickable="true"
+                android:onClick="setMove"
+                android:textAlignment="center" />
+
+            <ImageView
+                android:id="@+id/b7"
+                android:layout_width="37.5dp"
+                android:layout_height="37.5dp"
+                android:clickable="true"
+                android:onClick="setMove"
+                android:textAlignment="center" />
+
+            <ImageView
+                android:id="@+id/c7"
+                android:layout_width="37.5dp"
+                android:layout_height="37.5dp"
+                android:clickable="true"
+                android:onClick="setMove"
+                android:textAlignment="center" />
+
+            <ImageView
+                android:id="@+id/d7"
+                android:layout_width="37.5dp"
+                android:layout_height="37.5dp"
+                android:clickable="true"
+                android:onClick="setMove"
+                android:textAlignment="center" />
+
+            <ImageView
+                android:id="@+id/e7"
+                android:layout_width="37.5dp"
+                android:layout_height="37.5dp"
+                android:clickable="true"
+                android:onClick="setMove"
+                android:textAlignment="center" />
+
+            <ImageView
+                android:id="@+id/f7"
+                android:layout_width="37.5dp"
+                android:layout_height="37.5dp"
+                android:clickable="true"
+                android:onClick="setMove"
+                android:textAlignment="center" />
+
+            <ImageView
+                android:id="@+id/g7"
+                android:layout_width="37.5dp"
+                android:layout_height="37.5dp"
+                android:clickable="true"
+                android:onClick="setMove"
+                android:textAlignment="center" />
+
+            <ImageView
+                android:id="@+id/h7"
+                android:layout_width="37.5dp"
+                android:layout_height="37.5dp"
+                android:clickable="true"
+                android:onClick="setMove"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/row-7-label"
+                android:layout_width="25dp"
+                android:layout_height="37.5dp"
+                android:shadowColor="#000000"
+                android:text="@string/chessrow7"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/row_6"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/a6"
+                android:layout_width="37.5dp"
+                android:layout_height="37.5dp"
+                android:clickable="true"
+                android:onClick="setMove"
+                android:textAlignment="center" />
+
+            <ImageView
+                android:id="@+id/b6"
+                android:layout_width="37.5dp"
+                android:layout_height="37.5dp"
+                android:clickable="true"
+                android:onClick="setMove"
+                android:textAlignment="center" />
+
+            <ImageView
+                android:id="@+id/c6"
+                android:layout_width="37.5dp"
+                android:layout_height="37.5dp"
+                android:clickable="true"
+                android:onClick="setMove"
+                android:textAlignment="center" />
+
+            <ImageView
+                android:id="@+id/d6"
+                android:layout_width="37.5dp"
+                android:layout_height="37.5dp"
+                android:clickable="true"
+                android:onClick="setMove"
+                android:textAlignment="center" />
+
+            <ImageView
+                android:id="@+id/e6"
+                android:layout_width="37.5dp"
+                android:layout_height="37.5dp"
+                android:clickable="true"
+                android:onClick="setMove"
+                android:textAlignment="center" />
+
+            <ImageView
+                android:id="@+id/f6"
+                android:layout_width="37.5dp"
+                android:layout_height="37.5dp"
+                android:clickable="true"
+                android:onClick="setMove"
+                android:textAlignment="center" />
+
+            <ImageView
+                android:id="@+id/g6"
+                android:layout_width="37.5dp"
+                android:layout_height="37.5dp"
+                android:clickable="true"
+                android:onClick="setMove"
+                android:textAlignment="center" />
+
+            <ImageView
+                android:id="@+id/h6"
+                android:layout_width="37.5dp"
+                android:layout_height="37.5dp"
+                android:clickable="true"
+                android:onClick="setMove"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/row-6-label"
+                android:layout_width="25dp"
+                android:layout_height="37.5dp"
+                android:shadowColor="#000000"
+                android:text="@string/chessrow6"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/row_5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/a5"
+                android:layout_width="37.5dp"
+                android:layout_height="37.5dp"
+                android:clickable="true"
+                android:onClick="setMove"
+                android:textAlignment="center" />
+
+            <ImageView
+                android:id="@+id/b5"
+                android:layout_width="37.5dp"
+                android:layout_height="37.5dp"
+                android:clickable="true"
+                android:onClick="setMove"
+                android:textAlignment="center" />
+
+            <ImageView
+                android:id="@+id/c5"
+                android:layout_width="37.5dp"
+                android:layout_height="37.5dp"
+                android:clickable="true"
+                android:onClick="setMove"
+                android:textAlignment="center" />
+
+            <ImageView
+                android:id="@+id/d5"
+                android:layout_width="37.5dp"
+                android:layout_height="37.5dp"
+                android:clickable="true"
+                android:onClick="setMove"
+                android:textAlignment="center" />
+
+            <ImageView
+                android:id="@+id/e5"
+                android:layout_width="37.5dp"
+                android:layout_height="37.5dp"
+                android:clickable="true"
+                android:onClick="setMove"
+                android:textAlignment="center" />
+
+            <ImageView
+                android:id="@+id/f5"
+                android:layout_width="37.5dp"
+                android:layout_height="37.5dp"
+                android:clickable="true"
+                android:onClick="setMove"
+                android:textAlignment="center" />
+
+            <ImageView
+                android:id="@+id/g5"
+                android:layout_width="37.5dp"
+                android:layout_height="37.5dp"
+                android:clickable="true"
+                android:onClick="setMove"
+                android:textAlignment="center" />
+
+            <ImageView
+                android:id="@+id/h5"
+                android:layout_width="37.5dp"
+                android:layout_height="37.5dp"
+                android:clickable="true"
+                android:onClick="setMove"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/row-5-label"
+                android:layout_width="25dp"
+                android:layout_height="37.5dp"
+                android:shadowColor="#000000"
+                android:text="@string/chessrow5"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/row_4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/a4"
+                android:layout_width="37.5dp"
+                android:layout_height="37.5dp"
+                android:clickable="true"
+                android:onClick="setMove"
+                android:textAlignment="center" />
+
+            <ImageView
+                android:id="@+id/b4"
+                android:layout_width="37.5dp"
+                android:layout_height="37.5dp"
+                android:clickable="true"
+                android:onClick="setMove"
+                android:textAlignment="center" />
+
+            <ImageView
+                android:id="@+id/c4"
+                android:layout_width="37.5dp"
+                android:layout_height="37.5dp"
+                android:clickable="true"
+                android:onClick="setMove"
+                android:textAlignment="center" />
+
+            <ImageView
+                android:id="@+id/d4"
+                android:layout_width="37.5dp"
+                android:layout_height="37.5dp"
+                android:clickable="true"
+                android:onClick="setMove"
+                android:textAlignment="center" />
+
+            <ImageView
+                android:id="@+id/e4"
+                android:layout_width="37.5dp"
+                android:layout_height="37.5dp"
+                android:clickable="true"
+                android:onClick="setMove"
+                android:textAlignment="center" />
+
+            <ImageView
+                android:id="@+id/f4"
+                android:layout_width="37.5dp"
+                android:layout_height="37.5dp"
+                android:clickable="true"
+                android:onClick="setMove"
+                android:textAlignment="center" />
+
+            <ImageView
+                android:id="@+id/g4"
+                android:layout_width="37.5dp"
+                android:layout_height="37.5dp"
+                android:clickable="true"
+                android:onClick="setMove"
+                android:textAlignment="center" />
+
+            <ImageView
+                android:id="@+id/h4"
+                android:layout_width="37.5dp"
+                android:layout_height="37.5dp"
+                android:clickable="true"
+                android:onClick="setMove"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/row-4-label"
+                android:layout_width="25dp"
+                android:layout_height="37.5dp"
+                android:shadowColor="#000000"
+                android:text="@string/chessrow4"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/row_3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/a3"
+                android:layout_width="37.5dp"
+                android:layout_height="37.5dp"
+                android:clickable="true"
+                android:onClick="setMove"
+                android:textAlignment="center" />
+
+            <ImageView
+                android:id="@+id/b3"
+                android:layout_width="37.5dp"
+                android:layout_height="37.5dp"
+                android:clickable="true"
+                android:onClick="setMove"
+                android:textAlignment="center" />
+
+            <ImageView
+                android:id="@+id/c3"
+                android:layout_width="37.5dp"
+                android:layout_height="37.5dp"
+                android:clickable="true"
+                android:onClick="setMove"
+                android:textAlignment="center" />
+
+            <ImageView
+                android:id="@+id/d3"
+                android:layout_width="37.5dp"
+                android:layout_height="37.5dp"
+                android:clickable="true"
+                android:onClick="setMove"
+                android:textAlignment="center" />
+
+            <ImageView
+                android:id="@+id/e3"
+                android:layout_width="37.5dp"
+                android:layout_height="37.5dp"
+                android:clickable="true"
+                android:onClick="setMove"
+                android:textAlignment="center" />
+
+            <ImageView
+                android:id="@+id/f3"
+                android:layout_width="37.5dp"
+                android:layout_height="37.5dp"
+                android:clickable="true"
+                android:onClick="setMove"
+                android:textAlignment="center" />
+
+            <ImageView
+                android:id="@+id/g3"
+                android:layout_width="37.5dp"
+                android:layout_height="37.5dp"
+                android:clickable="true"
+                android:onClick="setMove"
+                android:textAlignment="center" />
+
+            <ImageView
+                android:id="@+id/h3"
+                android:layout_width="37.5dp"
+                android:layout_height="37.5dp"
+                android:clickable="true"
+                android:onClick="setMove"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/row-3-label"
+                android:layout_width="25dp"
+                android:layout_height="37.5dp"
+                android:shadowColor="#000000"
+                android:text="@string/chessrow3"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/row_2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/a2"
+                android:layout_width="37.5dp"
+                android:layout_height="37.5dp"
+                android:clickable="true"
+                android:onClick="setMove"
+                android:textAlignment="center" />
+
+            <ImageView
+                android:id="@+id/b2"
+                android:layout_width="37.5dp"
+                android:layout_height="37.5dp"
+                android:clickable="true"
+                android:onClick="setMove"
+                android:textAlignment="center" />
+
+            <ImageView
+                android:id="@+id/c2"
+                android:layout_width="37.5dp"
+                android:layout_height="37.5dp"
+                android:clickable="true"
+                android:onClick="setMove"
+                android:textAlignment="center" />
+
+            <ImageView
+                android:id="@+id/d2"
+                android:layout_width="37.5dp"
+                android:layout_height="37.5dp"
+                android:clickable="true"
+                android:onClick="setMove"
+                android:textAlignment="center" />
+
+            <ImageView
+                android:id="@+id/e2"
+                android:layout_width="37.5dp"
+                android:layout_height="37.5dp"
+                android:clickable="true"
+                android:onClick="setMove"
+                android:textAlignment="center" />
+
+            <ImageView
+                android:id="@+id/f2"
+                android:layout_width="37.5dp"
+                android:layout_height="37.5dp"
+                android:clickable="true"
+                android:onClick="setMove"
+                android:textAlignment="center" />
+
+            <ImageView
+                android:id="@+id/g2"
+                android:layout_width="37.5dp"
+                android:layout_height="37.5dp"
+                android:clickable="true"
+                android:onClick="setMove"
+                android:textAlignment="center" />
+
+            <ImageView
+                android:id="@+id/h2"
+                android:layout_width="37.5dp"
+                android:layout_height="37.5dp"
+                android:clickable="true"
+                android:onClick="setMove"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/row-2-label"
+                android:layout_width="25dp"
+                android:layout_height="37.5dp"
+                android:shadowColor="#000000"
+                android:text="@string/chessrow2"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/row_1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/a1"
+                android:layout_width="37.5dp"
+                android:layout_height="37.5dp"
+                android:clickable="true"
+                android:onClick="setMove" />
+
+            <ImageView
+                android:id="@+id/b1"
+                android:layout_width="37.5dp"
+                android:layout_height="37.5dp"
+                android:clickable="true"
+                android:onClick="setMove" />
+
+            <ImageView
+                android:id="@+id/c1"
+                android:layout_width="37.5dp"
+                android:layout_height="37.5dp"
+                android:clickable="true"
+                android:onClick="setMove" />
+
+            <ImageView
+                android:id="@+id/d1"
+                android:layout_width="37.5dp"
+                android:layout_height="37.5dp"
+                android:clickable="true"
+                android:onClick="setMove" />
+
+            <ImageView
+                android:id="@+id/e1"
+                android:layout_width="37.5dp"
+                android:layout_height="37.5dp"
+                android:clickable="true"
+                android:onClick="setMove" />
+
+            <ImageView
+                android:id="@+id/f1"
+                android:layout_width="37.5dp"
+                android:layout_height="37.5dp"
+                android:clickable="true"
+                android:onClick="setMove" />
+
+            <ImageView
+                android:id="@+id/g1"
+                android:layout_width="37.5dp"
+                android:layout_height="37.5dp"
+                android:clickable="true"
+                android:onClick="setMove" />
+
+            <ImageView
+                android:id="@+id/h1"
+                android:layout_width="37.5dp"
+                android:layout_height="37.5dp"
+                android:clickable="true"
+                android:onClick="setMove" />
+
+            <TextView
+                android:id="@+id/row-1-label"
+                android:layout_width="25dp"
+                android:layout_height="37.5dp"
+                android:shadowColor="#000000"
+                android:text="@string/chessrow1"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/alpha_row"
+            android:layout_width="25dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/alpha_column_a"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:shadowColor="#000000"
+                android:text="@string/chessColumnA"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:id="@+id/alpha_column_b"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:shadowColor="#000000"
+                android:text="@string/chessColumnB"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:id="@+id/alpha_column_c"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:shadowColor="#000000"
+                android:text="@string/chessColumnC"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:id="@+id/alpha_column_d"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:shadowColor="#000000"
+                android:text="@string/chessColumnD"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:id="@+id/alpha_column_e"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:shadowColor="#000000"
+                android:text="@string/chessColumnE"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:id="@+id/alpha_column_f"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:shadowColor="#000000"
+                android:text="@string/chessColumnF"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:id="@+id/alpha_column_g"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:shadowColor="#000000"
+                android:text="@string/chessColumnG"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:id="@+id/alpha_column_h"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:shadowColor="#000000"
+                android:text="@string/chessColumnH"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF" />
+        </TableRow>
+
+    </TableLayout>
+
+    <Button
+        android:id="@+id/playMoveBtn"
+        android:layout_width="75dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="62dp"
+        android:layout_marginTop="32dp"
+        android:background="@android:color/holo_green_light"
+        android:onClick="validateChessAppMove"
+        android:shadowColor="#000000"
+        android:text="@string/playMove"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/main_chessboard"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/randomMoveBtn"
+        android:layout_width="75dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="62dp"
+        android:background="@android:color/holo_green_light"
+        android:onClick="playRandomMove"
+        android:outlineSpotShadowColor="#000000"
+        android:shadowColor="#000000"
+        android:text="@string/randomMoveBtn"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/undoMoveBtn"
+        app:layout_constraintTop_toBottomOf="@+id/main_chessboard"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/undoMoveBtn"
+        android:layout_width="75dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="32dp"
+        android:background="@android:color/holo_green_light"
+        android:onClick="undoLastChessMove"
+        android:shadowColor="#000000"
+        android:text="@string/undoMove"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/randomMoveBtn"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/playMoveBtn"
+        app:layout_constraintTop_toBottomOf="@+id/main_chessboard"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/resignButton"
+        android:layout_width="80dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="124dp"
+        android:background="#FF5151"
+        android:onClick="resignChessGame"
+        android:text="@string/resignGameBtn"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/drawMoveBtn"
+        app:layout_constraintTop_toBottomOf="@+id/randomMoveBtn"
+        app:layout_constraintVertical_bias="0.18" />
+
+    <Button
+        android:id="@+id/drawMoveBtn"
+        android:layout_width="80dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="104dp"
+        android:layout_marginEnd="8dp"
+        android:background="#FF5151"
+        android:onClick="drawChessGame"
+        android:text="@string/drawMove"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/resignButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/playMoveBtn"
+        app:layout_constraintVertical_bias="0.178" />
+
+    <TextView
+        android:id="@+id/note"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FAF8F8"
+        app:layout_constraintBottom_toTopOf="@+id/undoMoveBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.477"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/main_chessboard"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

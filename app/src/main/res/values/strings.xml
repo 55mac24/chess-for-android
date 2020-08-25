@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">Chess</string>
+    <string name="gameTitle">Game Mode:</string>
+    <string name="twoPlayerButton_text">Two Players</string>
+    <string name="aiPlayerButton_text">AI</string>
+    <string name="white_space">  </string>
+    <string name="black_space">##</string>
+    <string name="playMove">Move</string>
+    <string name="drawMove">Draw</string>
+    <string name="undoMove">Undo</string>
+    <string name="yesOption">yes</string>
+    <string name="noOption">no</string>
+    <string name="saveGamePrompt">Would you like to save game?</string>
+    <string name="gameLogs">Game Logs</string>
+    <string name="chessrow8">8</string>
+    <string name="chessrow7">7</string>
+    <string name="chessrow6">6</string>
+    <string name="chessrow5">5</string>
+    <string name="chessrow4">4</string>
+    <string name="chessrow3">3</string>
+    <string name="chessrow2">2</string>
+    <string name="chessrow1">1</string>
+    <string name="chessColumnA">a</string>
+    <string name="chessColumnB">b</string>
+    <string name="chessColumnC">c</string>
+    <string name="chessColumnD">d</string>
+    <string name="chessColumnE">e</string>
+    <string name="chessColumnF">f</string>
+    <string name="chessColumnG">g</string>
+    <string name="chessColumnH">h</string>
+    <string name="resignGameBtn">Resign</string>
+    <string name="randomMoveBtn">Random</string>
+
+</resources>
