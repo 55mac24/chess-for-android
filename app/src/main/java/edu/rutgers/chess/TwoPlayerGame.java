@@ -108,18 +108,7 @@ public class TwoPlayerGame extends AppCompatActivity implements
             return false;
         }
         mybd.insert(name,temp);
-        //System.out.println("Save success");
         namelist=mybd.getName();
-        //System.out.println("2"+namelist);
-        //System.out.println("10"+mybd.getinstruction());
-        /*ChessGameLogsDBController db = new ChessGameLogsDBController();
-        ArrayList<ChessGameParameters> temp=db.readGamesFromStorage(getApplicationContext());
-        if(db.doesListContainGame(temp,name)){
-            System.out.println("0");
-            return false;
-        }
-        db.addGameToStorage(title, date, gameMoveHistory, getApplicationContext());
-        System.out.println("1");*/
         endGameSession();
         Intent intent = new Intent(this, GameLogMenu.class);
         startActivity(intent);
